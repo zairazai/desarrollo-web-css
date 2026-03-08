@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SVG mask layer</h1>
+
+<p>An SVG mask layer (formed as a circle):</p>
+
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <mask id="svgmask1">
+    <circle r="150" cx="200" cy="200" fill="#ffffff" />
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg>
+
+<p>Original image:</p>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+

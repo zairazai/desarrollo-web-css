@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) 150px 150px; /* First column is at least 80px and can grow to 1fr */
+  background-color: dodgerblue;
+  padding: 5px;
+  gap: 5px;
+}
+.container div {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-template-columns Property</h1>
+
+<p>Use minmax() to define a size-range for the first grid column:</p>
+
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+
+</body>
+</html>

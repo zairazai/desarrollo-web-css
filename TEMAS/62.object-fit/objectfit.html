@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.image-container {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.image-container img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Not Using object-fit</h2>
+
+<p>Here we do not use "object-fit", so when we resize the browser window, the aspect ratio of the images will be destroyed:</p>
+
+<div class="image-container">
+  <img src="rock600x400.jpg" alt="Norway" width="600" height="400"> 
+  <img src="paris.jpg" alt="Paris" width="400" height="300">
+</div>
+
+</body>
+</html>

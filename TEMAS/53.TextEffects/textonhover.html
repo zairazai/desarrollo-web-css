@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.test1 {
+  width: 200px; 
+  border: 1px solid #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  width: 200px; 
+  border: 1px solid #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p:hover {
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+
+<h2>Show Full Text on Hover</h2>
+
+<p>Hover over the two p elements below, to see the entire text.</p>
+<p class="test1">This is some long text that will not fit in the box</p>
+<p class="test2">This is some long text that will not fit in the box</p>
+
+</body>
+</html>
